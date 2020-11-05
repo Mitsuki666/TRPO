@@ -5,8 +5,9 @@ Class SolutionLine {
     public function lin ($a,$b){
 
         if($a === 0){
-            return null;
+            throw new SemenovException("Уравнение не существует");
         }
+        \Semenov\MyLog::log("Решается линейное уравнение");
         return $this->x=-($a/$b);
     }
     protected $x;
