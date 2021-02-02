@@ -1,0 +1,25 @@
+{
+  "name": "mitsuki666/trpo",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Mitsuki666",
+      "email": "melonw33ha@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/rok9ru/trpo-core.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Mitsuki666/trpo2.git"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "rok9ru/trpo-core":"^2.0",
+    "mitsuki666/trpo2":"^5.1"
+  }
+}

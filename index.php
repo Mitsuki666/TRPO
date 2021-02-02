@@ -4,17 +4,11 @@ use Semenov\MyLog;
 use Semenov\SolutionQuatro;
 use Semenov\SemenovException;
 
-include "core\EquationInterface.php";
-include "core\LogAbstract.php";
-include "core\LogInterface.php";
-include "Semenov\MyLog.php";
-include "Semenov\SolutionLine.php";
-include "Semenov\SolutionQuatro.php";
-include "Semenov\SemenovException.php";
+require_once __DIR__ . '/vendor/autoload.php';
 
 ini_set('error_reporting', E_ALL);
 try {
-    $version = file_get_context("version");
+    $version = file_get_contents("version");
     MyLog::log("Версия программы ".$version);
     $values = array();
 
